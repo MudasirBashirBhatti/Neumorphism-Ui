@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+:root {
+    --primary: rgb(238, 238, 238);
+    --secondry: rgba(75, 75, 75, 0.74);
+    /* --shadow:  */
+}
+
+body {
+    background-color: var(--primary);
+    color: var(--secondry);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    width: 60%;
+    max-width: 300px;
+
+    margin: 2em auto;
+}
+
+.btn {
+    box-shadow: 5px 5px 5px rgba(48, 60, 66, 0.171),
+        -5px -5px 5px white;
+    border-radius: 10px;
+    border: none;
+    color: var(--secondry);
+    cursor: pointer;
+
+}
+
+h1 {
+    font-size: 1rem;
+    background-color: var(--primary);
+    text-align: center;
+    width: 100%;
+    padding: 1em;
+}
+.btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.4em 0em;
+}
+.btn:hover{
+    animation: button 1s;
+}
+.btns a i{
+    padding:.2em;
+    background-color: var(--primary);
+    border-radius: 10px;
+}
+@keyframes button {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes innerIcon {
+    0%{
+        transform: rotate(0deg);
+    }
+    30%{
+        transform: rotate(45deg);
+    }
+    70%{
+        transform: rotate(-45deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.btns a i:hover{
+    background-color: var(--primary);
+    border-radius:10px;
+}
+.btns a{
+    color:var(--secondry);
+    font-size: 2rem;
+    transition: .5s;
+}
+
+.github:hover{
+    color: black;
+}
+.android:hover{
+    color: rgb(42, 179, 0);
+}
+.earth:hover{
+    color:rgb(0, 0, 0);
+}
+.youtube:hover{
+    color: red;
+}
+footer{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
